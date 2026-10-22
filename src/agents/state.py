@@ -1,8 +1,7 @@
-from typing import Annotated, Any, Dict, List, Literal, Optional
+from typing import Annotated, Any, Dict, List, Literal, Optional, TypedDict
 from langchain_core.messages import BaseMessage
 from langgraph.graph.message import add_messages
 from pydantic import BaseModel, Field
-
 
 class InvoiceLineItem(BaseModel):
     item_id: str = Field(..., description="Line item ID or number")
